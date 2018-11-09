@@ -2,12 +2,12 @@
 <!-- TOC -->
 
 - [Observer](#observer)
-    - [Intent <a name="intent"></a>](#intent-a-nameintenta)
-    - [Applicability <a name="applicability"></a>](#applicability-a-nameapplicabilitya)
-    - [Implementation <a name="implementation"></a>](#implementation-a-nameimplementationa)
-    - [Implementation Issues <a name="implementation_issues"></a>](#implementation-issues-a-nameimplementation_issuesa)
-    - [Known Uses <a name="known_uses"></a>](#known-uses-a-nameknown_usesa)
-    - [References <a name="references"></a>](#references-a-namereferencesa)
+    - [Intent](#intent)
+    - [Applicability](#applicability)
+    - [Implementation](#implementation)
+    - [Implementation Issues](#implementation-issues)
+    - [Known Uses](#known-uses)
+    - [References](#references)
 
 <!-- /TOC -->
 ## Intent <a name="intent"></a>
