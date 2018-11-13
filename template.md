@@ -11,5 +11,3 @@ This file contains a template for creation of Markdown documents.
 ## References <a name="references"></a>
 
 * https://www.wikipedia.org/
-
-# bru mozao
