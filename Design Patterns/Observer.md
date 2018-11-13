@@ -173,6 +173,3 @@ The first and perhaps best-known example of the Observer pattern appears in Mode
 
 * Design Patterns, Elements of Reusable Object-Oriented Software, GoF
 * https://sourcemaking.com/design_patterns/observer
-
-
-# Olavo otario 
