@@ -5,7 +5,7 @@
 - [Intent](#intent)
 - [Applicability](#applicability)
 - [Implementation](#implementation)
-- [Implementation Issues](#implementation-issues)
+- [Trade-Offs](#trade_offs)
 - [Known Uses](#known-uses)
 - [References](#references)
 
@@ -110,7 +110,7 @@ class Main {
 
 ```
 
-## Implementation Issues <a name="implementation_issues"></a> 
+## Trade-Offs <a name="trade-offs"></a> 
 
 1. *Mapping subjects to their observers.* The simplest way for a subject to keep track of the observers it should notify is to store references to them explicitly in the subject. However, such storage may be too expensive when there are many subjects and few observers. One solution is to trade space for time by using an associative look-up (e.g., a hash table) to maintain the subject-to-observer mapping. Thus a subject with no observers does not incur storage overhead. On the other hand, this approach increases the cost of accessing the observers.
 
