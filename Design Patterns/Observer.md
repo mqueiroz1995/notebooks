@@ -28,86 +28,88 @@ Use the Observer pattern in any of the following situations:
 The key objects in this pattern are subject and observer. A subject may have any number of dependent observers. All observers are notified whenever the subject undergoes a change in state. In response, each observer will query the subject to synchronize its state with the subject's state.
 
 ```java
-abstract class Observer {
-    abstract void update();
+package design_patterns;
+
+import java.util.ArrayList;
+import java.util.List;
+
+interface Observer {
+	abstract void update();
 }
 
 abstract class Subject {
-    private List<Observer> observers = new ArrayList<>();
-    private boolean hasChanged;
+	private List<Observer> observers = new ArrayList<>();
+	private boolean hasChanged;
 
-    public void addOserver(Observer o) {
-        observers.add(o);
-    }
+	public void addOserver(Observer o) {
+		observers.add(o);
+	}
 
-    public void deleteObserver(Observer o) {
-        observers.remove(o);
-    }
+	public void deleteObserver(Observer o) {
+		observers.remove(o);
+	}
 
-    public void deleteObservers() {
-        observer.clear();
-    }
+	public void deleteObservers() {
+		observers.clear();
+	}
 
-    protected void setChanged() {
-        hasChanged = true;
-    }
+	protected void setChanged() {
+		hasChanged = true;
+	}
 
-    protected void clearChanged(){
-        hasChanged = false;
-    }
+	protected void clearChanged() {
+		hasChanged = false;
+	}
 
-    protected void notifyObservers() {
-        if(hasChanged) {
-            for (Observer observer : observers) {
-                observer.update();
-            }
-        }
-    }
+	protected void notifyObservers() {
+		if (hasChanged) {
+			for (Observer observer : observers) {
+				observer.update();
+			}
+		}
+	}
 }
-```
 
-```java
 class ConcreteSubject extends Subject {
-    public int state = 0;
+	public int state = 0;
 
-    public void changeState() {
-        state++;
+	public void changeState() {
+		state++;
 
-        setChanged();
-        notifyObservers();
-    }
+		setChanged();
+		notifyObservers();
+	}
 
-    public int getState(){
-        return state;
-    }
+	public int getState() {
+		return state;
+	}
 }
 
-class ConcreteObserver extends Observer {
-    private ConcreteSubject subject;
+class ConcreteObserver implements Observer {
+	private ConcreteSubject subject;
 
-    public ConcreteObserver(ConcreteSubject subject) {
-        this.subject = subject;
-        this.subject.addObserver(this);
-    }
+	public ConcreteObserver(ConcreteSubject subject) {
+		this.subject = subject;
+		this.subject.addOserver(this);
+	}
 
-    @Override
-    public void update() {
-        System.out.print("OnSubjectUpdate - "+ Integer.toString(subject.getState()));
-    }
+	@Override
+	public void update() {
+		System.out.println("OnSubjectUpdate - " + Integer.toString(subject.getState()));
+	}
 }
 
-class Main {
-    public static void main(String[] args) {
-        ConcreteSubject subject = new ConcreteSubject();
+class ObserverMain {
+	public static void main(String[] args) {
+		ConcreteSubject subject = new ConcreteSubject();
 
-        ConcreteObserver observer_1 = new ConcreteObserver(subject);
-        ConcreteObserver observer_2 = new ConcreteObserver(subject);
-        ConcreteObserver observer_3 = new ConcreteObserver(subject);
+		ConcreteObserver observer_1 = new ConcreteObserver(subject);
+		ConcreteObserver observer_2 = new ConcreteObserver(subject);
+		ConcreteObserver observer_3 = new ConcreteObserver(subject);
 
-        subject.changeState();
-    }
+		subject.changeState();
+	}
 }
-
 ```
 
 ## Trade-Offs <a name="trade-offs"></a> 
