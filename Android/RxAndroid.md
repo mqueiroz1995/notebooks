@@ -25,7 +25,7 @@
 
 ## Why Reactive Programming on Android?
 
-Developing for Android means having to handle with a lot of time intensive processing tasks. While the UI runs on the Main Thread, we have to make networks requests, run persistion operations, access user location, perfom CPU intensive calculations and etc. 
+Developing for Android means having to handle with a lot of time intensive processing tasks. While the UI runs on the Main Thread, we have to make networks requests, run persistance operations, access user location, perfom CPU intensive calculations and etc. 
 
 ![alt text](imgs/rxjava-reactive.png)
 
