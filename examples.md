@@ -1,9 +1,12 @@
-# Template
+# Examples <!-- omit in toc -->
 
-## Table of Contents
-1. [Introduction](#introduction)
+## Table of Contents <!-- omit in toc -->
+- [Introduction](#introduction)
+- [Github Markdown Cheatsheet](#github-markdown-cheatsheet)
+- [Github Markdown Emojis](#github-markdown-emojis)
+- [Images](#images)
 
-## Introduction <a name="introduction"></a>
+## Introduction
 
 This file contains examples of how to use some of the Markdown capabilities.
 
