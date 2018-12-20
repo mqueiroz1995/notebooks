@@ -44,7 +44,7 @@ Writing asynchronous code is often connected to the following issues:
 In a way, this isn't anything new. Event buses or your typical click events are really an asynchronous event stream, on which you can observe and do some side effects. Reactive is that idea on steroids. You are able to create data streams of anything, not just from click and hover events. Streams are cheap and ubiquitous, anything can be a stream: variables, user inputs, properties, caches, data structures, etc. For example, imagine your Twitter feed would be a data stream in the same fashion that click events are. You can listen to that stream and react accordingly. <br><br>
 **On top of that, you are given an amazing toolbox of functions to combine, create and filter any of those streams.** That's where the "functional" magic kicks in. A stream can be used as an input to another one. Even multiple streams can be used as inputs to another stream. You can merge two streams. You can filter a stream to get another one that has only those events you are interested in. You can map data values from one stream to another new one.<br><br>
 [The introduction to Reactive Programming you've been missing
-(by @andrestaltz)](#https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
+(by @andrestaltz)](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 
 ## ReactiveX <a name="reactivex"></a>
 
