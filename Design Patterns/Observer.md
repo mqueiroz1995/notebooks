@@ -1,31 +1,29 @@
 ⚠️ This notebook is heavily based on the book "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 
-# Observer
-<!-- TOC -->
+# Observer <!-- omit in toc -->
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 - [Intent](#intent)
 - [Applicability](#applicability)
 - [Implementation](#implementation)
-- [Trade-Offs](#trade_offs)
+- [Trade-Offs](#trade-offs)
 - [Known Uses](#known-uses)
 - [References](#references)
 
-<!-- /TOC -->
-## Intent <a name="intent"></a>
+## Intent
 
 * Define a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 * Encapsulate the core (or common or engine) components in a Subject abstraction, and the variable (or optional or user interface) components in an Observer hierarchy.
 * The "View" part of Model-View-Controller.
 
-## Applicability <a name="applicability"></a>
+## Applicability
 
 Use the Observer pattern in any of the following situations:
 * When an abstraction has two aspects, one dependent on the other. Encapsulating these aspects in separate objects lets you vary and reuse them independently.
 * When a change to one object requires changing others, and you don't know how many objects need to be changed.
 * When an object should be able to notify other objects without making assumptions about who these objects are. In other words, you don't want these objects tightly coupled.
 
-## Implementation <a name="implementation"></a>
+## Implementation
 
 The key objects in this pattern are subject and observer. A subject may have any number of dependent observers. All observers are notified whenever the subject undergoes a change in state. In response, each observer will query the subject to synchronize its state with the subject's state.
 
@@ -114,7 +112,7 @@ class ObserverMain {
 }
 ```
 
-## Trade-Offs <a name="trade-offs"></a> 
+## Trade-Offs
 
 1. *Mapping subjects to their observers.* The simplest way for a subject to keep track of the observers it should notify is to store references to them explicitly in the subject. However, such storage may be too expensive when there are many subjects and few observers. One solution is to trade space for time by using an associative look-up (e.g., a hash table) to maintain the subject-to-observer mapping. Thus a subject with no observers does not incur storage overhead. On the other hand, this approach increases the cost of accessing the observers.
 
@@ -167,13 +165,13 @@ ChangeManager has three responsibilities:
         ChangeManager is an instance of the Mediator pattern. In general there is only one ChangeManager, and it is known globally. The Singleton pattern would be useful here.
 9. Combining the Subject and Observer classes. Class libraries written in languages that lack multiple inheritance (like Smalltalk) generally don't define separate Subject and Observer classes but combine their interfaces in one class. That lets you define an object that acts as both a subject and an observer without multiple inheritance. In Smalltalk, for example, the Subject and Observer interfaces are defined in the root class Object, making them available to all classes.
 
-## Known Uses <a name="known_uses"></a>
+## Known Uses
 
 The first and perhaps best-known example of the Observer pattern appears in Model/View/Controller (MVC). MVC's Model class plays the role of Subject, while View is the base class for observers.
 
 ![alt text](imgs/observer-mvc.png "http://kasparov.skife.org/blog/2004/11/05/")
 
-## References <a name="references"></a>
+## References
 
 * Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 * https://sourcemaking.com/design_patterns/observer

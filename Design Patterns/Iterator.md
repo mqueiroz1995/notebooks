@@ -1,28 +1,28 @@
 :warning: This notebook is heavily based on the book "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 
-# Iterator
+# Iterator <!-- omit in toc -->
 
 Also known as *Cursor*.
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 - [Intent](#intent)
 - [Applicability](#applicability)
 - [Implementation](#implementation)
-- [Trade-Offs](#trade_offs)
+- [Trade-Offs](#trade-offs)
 - [References](#references)
 
-## Intent <a name="intent"></a>
+## Intent
 
 Provide a way to access the elements of an aggregate object sequentially without exposing its underlying representation.
 
-## Applicability <a name="applicability"></a>
+## Applicability
 
 Use the Iterator pattern:
 * to access an aggregate object's contents without exposing its internal representation.
 * to support multiple traversals of aggregate objects.
 * to provide a uniform interface for traversing different aggregate structures (that is, to support polymorphic iteration).
 
-## Implementation <a name="implementation"></a>
+## Implementation
 
 ```java
 package design_patters;
@@ -168,7 +168,7 @@ class Main {
 }
 ```
 
-## Trade-Offs <a name="trade_offs"></a> 
+## Trade-Offs
 
 1. *Who controls the iteration?* A fundamental issue is deciding which party controls the iteration, the iterator or the client that uses the iterator. When the client controls the iteration, the iterator is called an **external iterator**, and when the iterator controls it, the iterator is an **internal iterator**. Clients that use an external iterator must advance the traversal and request the next element explicitly from the iterator. In contrast, the client hands an internal iterator an operation to perform, and the iterator applies that operation to every element in the aggregate.<br>
 External iterators are more flexible than internal iterators. It's easy to compare two collections for equality with an external iterator, for example, but it's practically impossible with internal iterators. Internal iterators are especially weak in a language like C++ that does not provide anonymous functions, closures, or continuations like Smalltalk and CLOS. But on the other hand, internal iterators are easier to use, because they define the iteration logic for you.
@@ -195,7 +195,7 @@ Composites often need to be traversed in more than one way. Preorder, postorder,
 8. *Null iterators*. A **NullIterator** is a degenerate iterator that's helpful for handling boundary conditions. By definition, a NullIterator is always done with traversal; that is, its IsDone operation always evaluates to true.<br>
 NullIterator can make traversing tree-structured aggregates (like Composites) easier. At each point in the traversal, we ask the current element for an iterator for its children. Aggregate elements return a concrete iterator as usual. But leaf elements return an instance of NullIterator. That lets us implement traversal over the entire structure in a uniform way.
 
-## References <a name="references"></a>
+## References
 
 * Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 * https://sourcemaking.com/design_patterns/iterator/

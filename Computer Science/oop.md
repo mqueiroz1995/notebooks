@@ -1,30 +1,32 @@
-# Observer
-<!-- TOC -->
+# Observer <!-- omit in toc -->
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 - [Introduction](#introduction)
-- [Encapsulation](#encapsulation)
-- [Abstraction](#abstraction)
-- [Inheritance](#inheritance)
+- [TODO: Encapsulation](#todo-encapsulation)
+- [TODO: Abstraction](#todo-abstraction)
+- [TODO: Inheritance](#todo-inheritance)
 - [Polymorphism](#polymorphism)
-    - [Overriding](#overriding)
-    - [Overloading](#overloading)
+  - [Overrinding](#overrinding)
+  - [Overloading](#overloading)
+  - [TODO: Generic](#todo-generic)
+  - [TODO: Late Binding](#todo-late-binding)
+  - [TODO: Polytypism](#todo-polytypism)
+  - [Implementation Aspects](#implementation-aspects)
 - [References](#references)
 
-<!-- /TOC -->
-## Introduction <a name="introduction"></a>
+## Introduction
 
 Object-oriented programming (OOP) is a programming language model organized around objects rather than "actions" and data rather than logic. Historically, a program has been viewed as a logical procedure that takes input data, processes it, and produces output data.
 
 The programming challenge was seen as how to write the logic, not how to define the data. Object-oriented programming takes the view that what we really care about are the objects we want to manipulate rather than the logic required to manipulate them.
 
-## TODO: Encapsulation <a name="encapsulation"></a>
+## TODO: Encapsulation
 
-## TODO: Abstraction <a name="abstraction"></a>
+## TODO: Abstraction
 
-## TODO: Inheritance <a name="inheritance"></a>
+## TODO: Inheritance
 
-## Polymorphism <a name="polymorphism"></a>
+## Polymorphism
 
 Polymorphism describes the concept that objects of different types can be accessed through the same interface. Each type can provide its own, independent implementation of this interface. It is one of the core concepts of object-oriented programming (OOP).
 
@@ -32,29 +34,29 @@ Polymorphism allows the expression of some sort of contract, with potentially ma
 
 While Pollymorphism is an OOP concept, several languages have facilities such as Method Overriding, Method Overloading, and Operator Overloading. 
 
-### **Overrinding** <a name="overriding"></a>
+### Overrinding
 
 Method Overriding is when a method defined in a superclass or interface is re-defined by one of its subclasses, thus modifying/replacing the behavior the superclass provides. The decision to call an implementation or another is **dynamically** taken at runtime, depending on the object the operation is called from. Notice the signature of the method remains the same when overriding.
 
 Also known as *Subtyping Polymorphism*.
 
-### **Overloading** <a name="overloading"></a>
+### Overloading
 
 Method Overloading is the action of defining multiple methods with the same name, but with different parameters. It can be seen as **static polymorphism**. The decision to call an implementation or another is taken at coding time.
 
 Operator Overloading is the ability of a certain language-dependant operator to behave differently based on the type of its operands (for instance, + could mean concatenation with Strings and addition with numeric operands).
 
-### TODO: **Generic**
+### TODO: Generic
 
 Also known as *Parametric Polymorphism*.
 
-### TODO: **Late Binding**
+### TODO: Late Binding
 
 Also known as *Duck Typing*.
 
-### TODO: **Polytypism**
+### TODO: Polytypism
 
-### **Implementation Aspects**
+### Implementation Aspects
 
 Polymorphism can be distinguished by when the implementation is selected: statically (at compile time) or dynamically (at run time).
 
@@ -62,7 +64,7 @@ Static polymorphism executes faster, because there is no dynamic dispatch overhe
 
 Dynamic polymorphism is more flexible but slower — for example, dynamic polymorphism allows *Late Binding*, and a dynamically linked library may operate on objects without knowing their full type. Dynamic polymorphism is usual for subtype polymorphism.
 
-## References <a name="references"></a>
+## References
 
 * https://searchmicroservices.techtarget.com/definition/object-oriented-programming-OOP
 * https://stackify.com/oop-concept-polymorphism/
