@@ -1,3 +1,5 @@
+:warning: This notebook is heavily based on the book "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
+
 # Iterator
 
 Also known as *Cursor*.
@@ -195,6 +197,6 @@ NullIterator can make traversing tree-structured aggregates (like Composites) ea
 
 ## References <a name="references"></a>
 
-* Design Patterns, Elements of Reusable Object-Oriented Software, GoF
+* Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 * https://sourcemaking.com/design_patterns/iterator/
 * https://www.geeksforgeeks.org/iterator-pattern/
