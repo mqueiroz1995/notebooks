@@ -1,3 +1,5 @@
+⚠️ This notebook is heavily based on the book "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
+
 # Observer
 <!-- TOC -->
 
@@ -173,5 +175,5 @@ The first and perhaps best-known example of the Observer pattern appears in Mode
 
 ## References <a name="references"></a>
 
-* Design Patterns, Elements of Reusable Object-Oriented Software, GoF
+* Design Patterns: Elements of Reusable Object-Oriented Software by Erich Gamma, John Vlissides, Ralph Johnson, and Richard Helm
 * https://sourcemaking.com/design_patterns/observer
