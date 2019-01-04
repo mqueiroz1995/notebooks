@@ -1,13 +1,17 @@
-# Template
+# Examples <!-- omit in toc -->
+
+## Table of Contents <!-- omit in toc -->
+- [Introduction](#introduction)
+- [Images](#images)
 
 ## Table of Contents
 1. [Introduction](#introduction)
 
-## Introduction <a name="introduction"></a>
+## Introduction
 
 This file contains examples of how to use some of the Markdown capabilities.
 
-## Images <a name="images"></a>
+## Images
 
 ```md
 ![alt text](IMAGE_PATH)
