@@ -3,6 +3,7 @@
 ## Table of Contents <!-- omit in toc -->
 - [Introduction](#introduction)
 - [Images](#images)
+- [Relative Links](#relative-links)
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -15,4 +16,9 @@ This file contains examples of how to use some of the Markdown capabilities.
 
 ```md
 ![alt text](IMAGE_PATH)
+```
+## Relative Links
+
+```md
+![a relative link](Android/RxAndroid.md)
 ```
