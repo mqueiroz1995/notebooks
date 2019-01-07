@@ -5,6 +5,7 @@
 - [Github Markdown Cheatsheet](#github-markdown-cheatsheet)
 - [Github Markdown Emojis](#github-markdown-emojis)
 - [Images](#images)
+- [Relative Links](#relative-links)
 
 ## Introduction
 
@@ -22,4 +23,9 @@ https://gist.github.com/rxaviers/7360908
 
 ```md
 ![alt text](IMAGE_PATH)
+```
+## Relative Links
+
+```md
+![a relative link](Android/RxAndroid.md)
 ```
