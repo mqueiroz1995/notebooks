@@ -51,6 +51,7 @@ Persisted Until          | App is uninstalled    | App is uninstalled or when sy
 
 ## Sharing Data 
 :pushpin: TODO:
+:pushpin: TODO: Extract Section to it's own file
 
 ## Securing Data
 
