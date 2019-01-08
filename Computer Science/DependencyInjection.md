@@ -1,8 +1,8 @@
 # Dependency Injection <!-- omit in toc -->
 
 ## Table of Contents <!-- omit in toc -->
-- [Simple Introduction](#simple-introduction)
-- [Long Introduction](#long-introduction)
+- [Simple Introduction](#simpler-introduction)
+- [Long Introduction](#longer-introduction)
 - [Types of Dependency Injection](#types-of-dependency-injection)
 - [References](#references)
 
