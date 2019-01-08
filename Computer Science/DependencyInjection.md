@@ -47,3 +47,4 @@ There are three types of dependency injection:
 * https://www.jamesshore.com/Blog/Dependency-Injection-Demystified.html
 * https://blog.softwaremill.com/what-is-dependency-injection-8c9e7805502f
 * https://martinfowler.com/articles/injection.html
+* https://stackify.com/dependency-injection/
