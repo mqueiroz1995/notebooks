@@ -4,7 +4,7 @@
 
 - [Why Reactive Programming on Android?](#why-reactive-programming-on-android)
 - [What is Reactive Programming?](#what-is-reactive-programming)
-- [ReactiveX <a name="reactivex"></a>](#reactivex-a-name%22reactivex%22a)
+- [ReactiveX](#reactivex)
 - [ReactiveX Basics](#reactivex-basics)
   - [Observable and Subscriber](#observable-and-subscriber)
   - [onNext, onCompleted, and onError](#onnext-oncompleted-and-onerror)
@@ -46,7 +46,7 @@ In a way, this isn't anything new. Event buses or your typical click events are 
 [The introduction to Reactive Programming you've been missing
 (by @andrestaltz)](https://gist.github.com/staltz/868e7e9bc2a7b8c1f754)
 
-## ReactiveX <a name="reactivex"></a>
+## ReactiveX
 
 Reactive Extensions (also known as ReactiveX) is a set of tools allowing imperative programming languages to operate on sequences of data regardless of whether the data is synchronous or asynchronous. It provides a set of sequence operators that operate on each item in the sequence. It is an implementation of reactive programming and provides a blueprint for the tools to be implemented in multiple programming languages.
 
